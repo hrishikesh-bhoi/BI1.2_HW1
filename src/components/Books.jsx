@@ -2,7 +2,7 @@ import useFetch from "../useFetch";
 
 const Books = () => {
 
-    const { data, loading, error } = useFetch("http://localhost:3000/books");
+    const { data, loading, error } = useFetch(`${import.meta.env.VITE_API_URL}/books`);
 
     console.log(data);
     // 1. Display all the book titles present in your database.
